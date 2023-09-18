@@ -1,4 +1,4 @@
-# Portifolio
+# Portfolio
 
 Criei esse portfolio para mostrar um pouco dos meus conhecimentos em desenvolvimento web!
 
