@@ -1,0 +1,325 @@
+@import url(/src/styles.css);
+
+.box {
+    width: 80vw;
+    height: 100%;
+    background-color: var(--bg-color)
+}
+
+.box nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    
+    width: 80vw;
+    height: 5.3rem;
+}
+
+.box nav a img {
+    width: 60px;
+    height: 60px;
+   
+}
+
+.box nav .github-link {
+    margin-right: 2rem;
+    transition: all 0.5s;
+}
+
+.box nav .linkedin-link {
+    transition: all 0.5s;
+}
+
+.box nav a:hover{
+    margin-bottom: 10px
+}
+
+.main-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 1.25rem;
+    width: 80vw;
+}
+
+/* mensagem de Olá 
+    e nome da profissão
+*/
+.main-box .first-box .hello-box .hello-message,
+.main-box .first-box .hello-box .hello-message-2 {
+    font-family: var(--main-font);
+    font-size: 1,5rem;
+    font-weight: 100;
+
+    color: var(--light-font);
+}
+
+.main-box .first-box .hello-box .hello-message-2 {
+    margin-left: 0.3rem;
+}
+
+.main-box .first-box .hello-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-box .first-box .profession-name h1 {
+
+    font-size: 4.6rem;
+    font-family: var(--main-font);
+    font-weight: 100;
+    line-height: 5.5rem;
+    
+    color: var(--strong-color);
+
+}
+
+
+/* botão de baixar curriculo */
+
+.main-box .second-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 20.6rem;
+}
+
+.main-box .second-box a {
+    margin-right: 6.25rem;
+}
+
+.main-box .second-box a button:hover {
+    margin-bottom: 2px;
+
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.438);
+    border-collapse: collapse;
+}
+
+.main-box .second-box a button {
+    width: 9.3rem;
+    height: 3.7rem;
+   
+    border-radius: 0.6rem;
+    border: none;
+
+    background-color: var(--bg-button-color);
+
+    transition: all;
+}
+
+.main-box .second-box a button:hover {
+    cursor: pointer;
+}
+
+.main-box .second-box a button .h6-baixar{
+    font-family: var(--main-font);
+    font-size: 1.25rem ;
+    font-weight: 100;
+
+    color: var(--light-font); 
+}
+
+.main-box .second-box a button .h6-curriculo{
+    font-family: var(--main-font);
+    font-size: 1.25rem ;
+    font-weight: 550;
+
+    color: var(--info-font); 
+}
+
+/* botão de copiar email*/
+
+.box .tird-box .email-copy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border: 1px solid #8c857d32;
+    border-radius: 0.6rem;
+
+    width: 20.6rem;
+    height: 2.5rem;
+
+    background-color: var(--bg-button-color);
+}
+
+
+
+.box .tird-box .email-copy .email-icon-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 3.7rem ;
+    height: 100%;
+}
+
+.box .tird-box .email-copy .email-p-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #8c857d32;
+
+    
+    height: 100%;
+    width: 100%;
+}
+
+.box .tird-box .email-copy .email-p-div p {
+    font-family: var(--secondary-font);
+    font-size: 0.9rem;
+
+    color: #59514ab4;
+
+    transition: back 5s;
+}
+
+.box .tird-box .email-copy:hover{
+   background-color: #d9cec575;
+   cursor: pointer;
+}
+
+.box .tird-box {
+    margin-top:  2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* texto de apresentação */
+
+.box .fourth-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    width: 40vw;
+    height: 35vh;
+
+}
+
+.fourth-box p {
+    
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+}
+
+.fourth-box .about-text {
+    color: var(--info-font)
+}
+
+.fourth-box .light-font-text {
+    margin-top: 1rem;
+    color: var(--light-font);
+}
+
+.fourth-box .light-font-text strong {
+    color: var(--strong-color);
+}
+
+/*  animação
+    creditos: https://www.theappguruz.com/tag-tools/web/CSSAnimations/
+*/
+
+.tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes tada {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
+    @keyframes tada {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    } 
+
+    .zoomInDown {
+        -webkit-animation-name: zoomInDown;
+        animation-name: zoomInDown;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+        @-webkit-keyframes zoomInDown {
+        0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        }
+        60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+        transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        }
+        }
+        @keyframes zoomInDown {
+        0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+        }
+        60% {
+        opacity: 1;
+        -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+        transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+        }
+        } 
+
+    

@@ -1,0 +1,21 @@
+<section class="box" (mouseenter)="setClass()" (mouseleave)="setOffClass()">
+    <div class="project">
+        <div class="project-img">
+            <img src="assets/images/to-do-list.png" alt="">
+        </div>
+        <div class="project-explain">
+            <div class="project-tittle">
+                <h1 [ngClass]="className">TO-DO LIST</h1>
+                <a class="project-link" href="https://johnnricardo.github.io/todo-list/" target="_blank">(link do projeto)</a>
+            </div>
+            <div class="project-text">
+                <p class="text-1">Esse foi o meu primeiro projeto Angular! Nesse projeto entendi como funciona comunicação entre componentes com @input e @output, além de entender como funcionam os componentes e modulos nesse framework! </p>
+                <p class="text-2"> Funcionalidades:</p>
+                <p class="function-1">- Quando o usuário digita uma tarefa e presiona enter, o valor do input é passado para um método no componente de lista que preenche a ultima posição do Array de listagem com o valor do input</p>
+                <p class="function-2">- Quando o usuário clica na lixeira, o id daquele objeto é passado para um método no componente que remove ele do Array</p>
+                <p class="function-3">- Quando o checkbox é marcado, é chamado uma função que leva o objeto para o final da lista e taxa o texto contido neste objeto, através do seu id, passado na chamada do método</p>
+                <p class="function-4">- Quando existe alguma tarefa, o ‘botao ‘’DELETAR TODAS AS TAREFAS’’ é mostrado(reativo) e quando esse botão é clicado uma função é chamada para atribuir ao Array de listagem o valor de vazio ( [ ] )</p>
+            </div>
+        </div>
+    </div>
+</section>

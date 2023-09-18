@@ -1,0 +1,97 @@
+@import url(../../../../styles.css);
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80vw;
+    height: 100vh;
+
+    background-color: var(--bg-button-color);
+}
+
+.box .project-info{
+    display: flex;
+    flex-direction: column;
+    
+
+    width: 40vw;
+}
+
+.box .project-info .text-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.box .project-info .text-1 .tittle-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .project-info .text-1 .tittle-line .project-name {
+    transition: all 1s;
+
+    font-family: var(--main-font);
+    font-weight: 100;
+    font-size: 1.8rem;
+    color: var(--info-font);
+
+    margin-right: 0.5rem;
+}
+
+.box .project-info .text-1 .tittle-line .project-link {
+    font-family: var(--secondary-font);
+    font-style: italic;
+    text-decoration: none;
+    color: #457AA0;
+}
+
+.box .project-info .text-1 .project-explain {
+    font-family: var(--secondary-font);
+    font-size: 0.9rem;
+    text-align: justify;
+    color: var(--info-font);
+}
+
+.box .project-info .text-2 {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items : center;
+}
+
+.box .project-info .text-2 .text-2-tittle {
+    font-family: var(--main-font);
+    font-weight: 100;
+
+    color: #59514abe;
+}
+
+.box .project-info .text-2 .text-2-explain {
+    margin-top: 0.5rem;
+    font-family: var(--secondary-font);
+    font-size: 0.9rem;
+    text-align: justify;
+    color: var(--info-font);
+} 
+
+.box .project-info .text-1 .tittle-line .new-project-name {
+    transition: all 1s;
+
+    
+    color: var(--info-font);
+    font-family: var(--main-font);
+    font-weight: 100;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1rem rgba(255, 255, 255, 0.274);
+
+    margin-bottom: 0.6rem;
+    margin-right: 0.5rem;
+}

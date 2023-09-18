@@ -1,0 +1,98 @@
+@import url(../../../styles.css);
+
+.footer {
+    display: flex;
+    flex-direction: column;;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80vw;
+    height: 60vh;
+
+    background-color: var(--bg-button-color);
+}
+
+.footer .footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 2.5rem;
+}
+
+.footer .animated {
+    margin-top: -2rem;
+    height: 2.5rem;
+
+}
+
+.footer .animated .question{
+    margin-top: 1.5rem;
+    color: var(--light-font);
+}
+
+.footer .animated .new-question{
+    margin-top: 1.4rem;
+    color: var(--light-font);
+    text-shadow: 0px 3px 3px rgb(255, 255, 255);
+}
+
+
+.footer .animated .question strong,
+.footer .animated .new-question strong {
+    color: var(--strong-color);
+}
+
+.footer .footer-text p {
+    color: var(--info-font);
+}
+
+.footer .footer-credits{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2rem;
+}
+
+.footer .footer-credits .credit {
+    margin-bottom: 0.9rem;
+    color: var(--info-font);
+}
+
+p {
+    font-family: var(--secondary-font);
+    font-size: 0.9rem;
+}
+
+.footer .footer-credits .icons-credit {
+    color: var(--info-font);
+}
+
+.footer .footer-credits .icons-credit a {
+    text-decoration: none;
+    color: #457AA0;
+}
+
+
+.footer .footer-links .icon-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 20rem;
+    height: 6.25rem;
+}
+.footer .footer-links .icon-box a img {
+    transition: all 200ms;
+    width: 60px;
+    height: 60px;
+}
+
+.footer .footer-links .icon-box a img:hover {
+    transition: all 200ms;
+    width: 70px;
+    height: 70px;
+}

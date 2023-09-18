@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruda&family=Russo+One&display=swap');
+
+:root{
+    --main-font: Russo One;
+    --secondary-font: Ruda;
+
+    --bg-color: #F2EADF;
+    --strong-color: #403B31;
+    --light-font: #8C857D;
+    --info-font: #59514A;
+
+    --bg-button-color: #D9CEC5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body, html {
+    overflow-x: hidden!important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,18 @@
+<section class="box" (mouseenter)="setEffectClass()" (mouseleave)="setOffEffectClass()">
+    <div class="project-info" >
+        <div class="text-1">
+            <div class="tittle-line">
+                <h1 [ngClass]="projectNameClass">POKEDEX</h1>
+                <a target="_blank" href="https://johnnricardo.github.io/pokedex/" class="project-link">(link do projeto)</a>
+            </div>
+            <p class="project-explain">Criei uma pokedex online que consome uma API já existente, nesse projeto eu tenho um service resposável  por pegar(get) as informações da API usando o HttpClient do Angular, no meu  service eu tenho um método que fica obsersando(Observable) a API, e quando esse método consegue fazer o get, ele retorna esses dados para um outro método no meu componente de lista que está inscrito(subscribe) nessa requisição. O método do componente, recebe esses dados do service e popula um Array de objetos de 100 posições, que tem uma interface(model) compatível com algumas dessas caracteristicas recebidas no array que vem do service. Dessa forma eu tenho informações como o nome do pokemon, o tipo e a imagem.</p>
+        </div>      
+        <div class="text-2">
+            <h1 class="text-2-tittle">Mecanismo de busca e página de detalhes</h1>
+            <p class="text-2-explain">Minha pokédex possui um mecanismo de busca que recebe cada input do usuário e compara com um array populado para ver se há, em alguma posição, um elemento que comece com aqueles inputs. O segredo aqui, é que eu uso dois Arrays de objetos, o Array1 permanece populado e eu uso para comparar com os inputs da pesquisa do usuario, e o Array2 eu deixo receber os objetos do array1 se esses objetos tiverem nomes que comecem com inputs recebidos da pesquisa, e no meu componente eu mostro apenas o Array2. Além disso, quando o pokémon é clicado, abre uma tela de detalhes com outras informações de cada pokémon.</p>
+        </div>
+    </div>
+    <div class="project-image">
+        <img src="assets/images/pokedex.png" alt="">
+    </div>
+</section>
